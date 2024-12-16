@@ -1,0 +1,177 @@
+@keyframes slideme {
+  from { margin-right: 100%;
+	     width: 300%;  }
+   to {  font-size: 300%;
+         margin-center: 0%;
+	     width: 200%; }
+}
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Palatino', 'Georgia', serif;
+    background-color: #f5f5f0; /* Light Beige Background */
+    color: #333333; /* Dark Text Color */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #f2e05d; /* Yellow */
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    border-bottom: 1px solid #ffffff;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 1em 2em;
+}
+nav a:link, nav a:visited {
+    color: #333333; /* Black Text */
+}
+nav a:hover {
+    color: #f5f5f0; /* Beige Text on Hover */
+    background-color: #333333; /* Black Background on Hover */
+}
+
+/* Dropdown Menu Styling */
+nav ul {
+    position: relative; /* Required for dropdown positioning */
+}
+nav li {
+    position: relative; /* Enable child dropdowns to position absolutely */
+}
+nav ul li ul {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position relative to parent */
+    background-color: #f2e05d; /* Same yellow as nav bar */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    width: 200px; /* Ensure a consistent width */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for dropdown */
+}
+nav ul li ul li {
+    border-bottom: 1px solid #ffffff;
+}
+nav ul li:hover > ul {
+    display: block; /* Show dropdown on hover */
+}
+nav ul li ul li a {
+    padding: 1em;
+    color: #333333;
+    text-decoration: none;
+    display: block;
+}
+nav ul li ul li a:hover {
+    background-color: #333333;
+    color: #f5f5f0;
+}
+
+/* Header Styling */
+header {
+    background-color: #2e2e2e; /* Dark Gray for Header */
+    color: #f5f5f0; /* Beige Text */
+    background-image: url(light.gif);
+    background-repeat: no-repeat;
+    padding: 2em 0 2em 7em;
+    font-size: 120%;
+}
+h2 {
+    color: #f2e05d; /* Yellow Text for Headings */
+    font-family: Arial, sans-serif;
+}
+
+/* Main Content */
+main {
+    padding: 1em;
+    background-color: #ffffff; /* White Background */
+}
+aside {
+    padding: 1em;
+    background-color: #eaeaea; /* Light Gray for Sidebar */
+}
+
+/* Figure Styling */
+figure {
+    margin: auto;
+    padding: 8px;
+    width: 265px;
+    background-color: #ffffff; /* White for Figures */
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 5px #828282; 
+}
+figcaption {
+    text-align: center;
+    font-size: .8em;
+    font-style: italic;
+    color: #333333; /* Black for Captions */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2e2e2e; /* Dark Gray Footer */
+    color: #f5f5f0; /* Beige Text */
+    font-size: 70%;
+    text-align: center;
+    padding: 2em;
+    clear: both;
+}
+
+/* Offer Section Styling */
+#offer {
+    background-color: #f2e05d; /* Yellow Background */
+    width: 10em;
+    margin: 2em auto 0 auto;
+    text-align: center;
+}
+#offer a {
+    text-decoration: none;
+    color: #000000; /* Black Text */
+}
+
+header, main, nav, figure, footer {
+    display: block;
+}
+
+/* Responsive Styling */
+@media only screen and (min-width: 768px) {
+    #content {
+        display: flex;
+    }
+    nav {
+        flex: none;
+    }
+    main {
+        flex: 6;
+        min-width: 20em;
+        background-color: #ffffff; /* White for Main Content */
+    }
+    aside {
+        flex: 4;
+        background-color: #eaeaea; /* Light Gray Sidebar */
+    }
+    header {
+        padding-left: 10em;
+        overflow: hidden;
+        height: 160px;
+    }
+    h1 {
+        animation-duration: 5s;
+animation: slideme 5s forwards;
+
+    }
+
+a { color: #f2e05d;
+}
+
+}

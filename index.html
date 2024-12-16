@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="projectstylesheet.css">
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const homeLink = document.querySelector("a[href='index.html']");
+    homeLink.addEventListener("click", function (event) {
+      alert("You are already on the homepage!");
+      event.preventDefault(); // Stops the link from navigating
+    });
+  });
+</script>
+
+
+</head>
+<body>
+
+  <header>
+    <h1>Exploring Banned Books</h1>
+  </header>
+  <div id="content">
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="why.html">Why Books Get Banned</a></li>
+    <li>
+      <a href="banned.html">Banned Books</a>
+      <ul>
+        <li><a href="thug.html">The Hate U Give</a></li>
+        <li><a href="perks.html">Perks of Being a Wallflower</a></li>
+        <li><a href="451.html">Fahrenheit 451</a></li>
+        <li><a href="tcp.html">The Color Purple</a></li>
+      </ul>
+    </li>
+    <li><a href="perks.html">Sexuality</a></li>
+    <li><a href="tcp.html">Gender and Oppression</a></li>
+    <li><a href="451.html">Vulgar Content</a></li>
+    <li><a href="thug.html">Race and Oppression</a></li>
+    <li><a href="form.html">Banned Book Form</a></li>
+  </ul>
+</nav>
+
+  <main> 
+     <h2>Enter the World of Banned Books</h2>
+    <p>Welcome to this webpage that is all about banned books. This site aims to help you, the reader, explore the world of banned books. Books are often banned or "challenged" due to controversial content that they contain. Throughout history, books have been challenged and removed from schools, libraries, and communities for their themes, language, and ideas. But what does it mean to censor a book, and why do some stories create controversy? Here, you'll find information on notable banned books and the history of book censorship.</p>
+    <h2>Why Books Get Banned</h2>
+    <p>Books are commonly banned when they contain strong themes, sexually explicit content, LGBTQIA+ content, religious stances, religious stances, racism, etc. However, controversy arises in doing this because this means there is a lack of freedom of expression and speech. While these bans are typically driven by a desire to protect young readers from exposure to harm and sensitive content, they also raise significant concerns regarding freedom of speech and expression. Critics argue that banning books censors diverse perspectives and prevents individuals from engaging with important, often uncomfortable, issues. The topic of discussion is around establishing a balance between securing people from potentially harmful content and supporting open communication of ideas in society. To learn more, please click <a href="why.html">Why Books Get Banned.</a></p>
+
+ </main>
+   <aside>
+       <figure>
+         <img src="booksonshelf.jpg" width="250" height="355" id="floatright" alt="Books on Shelf">
+         <figcaption>A book shelf filled with lots of books. Pixabay, 2016, www.pixabay.com. Image published under the Creative Commons CC0 1.0 Universal Public Domain Dedication license prior to July 2017.</figcaption>
+	   </figure>
+   </aside>
+   </div>
+<footer>
+    <p>© 2024 Exploring Banned Books by Taylor Archer</p>
+    <p>Contact us: <a href="mailto:tarcher1@students.towson.edu">tarcher1@students.towson.edu</a></p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+    <p>Resources provided by <a href="https://www.marshall.edu/library">Marshall University Libraries</a> and <a href="https://www.cmu.edu/libraries/">Carnegie Mellon University Libraries</a>.</p>
+</footer>
+</body>
+</html>
